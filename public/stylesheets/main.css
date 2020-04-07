@@ -46,6 +46,22 @@ body {
   }
 }
 
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+  .logo {
+    margin-top: -100px;
+  }
+
+  .mobile-title-image {
+    display: none;
+  }
+
+  .desktop-title-image {
+    display: inline;
+    max-width: 80%;
+    max-width: 80vw;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   body {
     background-image: url('/images/bg_desktop.png');
