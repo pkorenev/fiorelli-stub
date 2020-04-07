@@ -19,6 +19,7 @@ body {
   background-image: url('/images/fiorelli-logo_v1.gif');
   background-position: top center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .logo img {
@@ -31,18 +32,27 @@ body {
     background-image: url('/images/bg_mobile.png');
   }
 
+  .title-image-container {
+    margin-top: -100px;
+  }
+
   .desktop-title-image {
     display: none;
   }
 
   .mobile-title-image {
-
+    max-width: 80%;
+    max-width: 80vw;
   }
 }
 
 @media only screen and (min-width: 768px) {
   body {
     background-image: url('/images/bg_desktop.png');
+  }
+
+  .title-image-container {
+    margin-top: -80px;
   }
 
   .mobile-title-image {
